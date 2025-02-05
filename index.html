@@ -13,21 +13,36 @@
         h1 {
             margin-top: 20px;
         }
+        .description {
+            max-width: 800px;
+            margin: 0 auto;
+            font-size: 16px;
+            color: #333;
+            text-align: left;
+            padding: 10px;
+        }
         .container {
             display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-            gap: 10px;
+            flex-direction: column;
+            align-items: center;
             margin-top: 20px;
         }
+        .btn-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            gap: 10px;
+            width: 80%;
+            max-width: 600px;
+        }
         .btn {
-            display: inline-block;
-            padding: 10px 20px;
+            display: block;
+            padding: 10px;
             font-size: 16px;
             color: white;
             background-color: #007BFF;
             text-decoration: none;
             border-radius: 5px;
+            text-align: center;
             transition: background 0.3s;
         }
         .btn:hover {
@@ -37,20 +52,26 @@
 </head>
 <body>
     <h1>3D Graph NHP</h1>
+    <div class="description">
+        <p>The correlations of diseases across multiple data sources were shown in a 3D graph. The most suitable criterion for comparing the data from the network analysis, major indications, and clinical trials was disease. Therefore, this study analyzed the correlation between the different data sources using disease as the primary basis.</p>
+        <p>The main indications of each prescription, diseases identified as potentially applicable through network analysis, and diseases confirmed as applicable in clinical papers were each extracted. A 3D graph was created by assigning each group to the x-axis (Network symptoms), y-axis (Clinical articles), and z-axis (Main symptoms).</p>
+    </div>
     <div class="container">
-        <a href="Banhabakchulcheonma-tang.html" class="btn">Banhabakchulcheonma-tang</a>
-        <a href="Banhahubak-tang.html" class="btn">Banhahubak-tang</a>
-        <a href="Banhasasim-tang.html" class="btn">Banhasasim-tang</a>
-        <a href="Bojungikgi-tang.html" class="btn">Bojungikgi-tang</a>
-        <a href="Daeshiho-tang.html" class="btn">Daeshiho-tang</a>
-        <a href="Galgeun-tang.html" class="btn">Galgeun-tang</a>
-        <a href="Galgeunhaegi-tang.html" class="btn">Galgeunhaegi-tang</a>
-        <a href="Gamisoyo-san.html" class="btn">Gamisoyo-san</a>
-        <a href="Hwanglyeonhaedok-tang.html" class="btn">Hwanglyeonhaedok-tang</a>
-        <a href="Hyeonggaeyeongyo-tang.html" class="btn">Hyeonggaeyeongyo-tang</a>
-        <a href="Saengmaek-san.html" class="btn">Saengmaek-san</a>
-        <a href="Socheongryong-tang.html" class="btn">Socheongryong-tang</a>
-        <a href="Sosiho-tang.html" class="btn">Sosiho-tang</a>
+        <div class="btn-container">
+            <a href="Banhabakchulcheonma-tang.html" class="btn">Banhabakchulcheonma-tang</a>
+            <a href="Banhahubak-tang.html" class="btn">Banhahubak-tang</a>
+            <a href="Banhasasim-tang.html" class="btn">Banhasasim-tang</a>
+            <a href="Bojungikgi-tang.html" class="btn">Bojungikgi-tang</a>
+            <a href="Daeshiho-tang.html" class="btn">Daeshiho-tang</a>
+            <a href="Galgeun-tang.html" class="btn">Galgeun-tang</a>
+            <a href="Galgeunhaegi-tang.html" class="btn">Galgeunhaegi-tang</a>
+            <a href="Gamisoyo-san.html" class="btn">Gamisoyo-san</a>
+            <a href="Hwanglyeonhaedok-tang.html" class="btn">Hwanglyeonhaedok-tang</a>
+            <a href="Hyeonggaeyeongyo-tang.html" class="btn">Hyeonggaeyeongyo-tang</a>
+            <a href="Saengmaek-san.html" class="btn">Saengmaek-san</a>
+            <a href="Socheongryong-tang.html" class="btn">Socheongryong-tang</a>
+            <a href="Sosiho-tang.html" class="btn">Sosiho-tang</a>
+        </div>
     </div>
 </body>
 </html>
